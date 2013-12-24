@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if @shopping_cart %>
+	<%= link_to("View Shopping Cart", shopping_cart_path(@shopping_cart)) %>
+<% end %>
+<br />
+<%#= binding.pry %>
+<% if @customer %>
+	<%= link_to("View Order History", customer_orders_path(:customer_id => @customer.id)) %>
+<% end %>
+
+<%= render "flash_messages" %>
+<%= yield %>
+
+</body>
+</html>

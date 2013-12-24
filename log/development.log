@@ -1,0 +1,1110 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (99.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (218.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-12-18 15:35:14 -0500
+Served asset /rails.png - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+  [1m[35m (153.8ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131218213511')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.3ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.3ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (123.6ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (201.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (118.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131218213511')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+  [1m[35m (133.1ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131219045332')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (101.4ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.5ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (71.0ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (164.3ms)[0m  [1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (122.6ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (129.9ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131219045332')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131218213511')
+Connecting to database specified by database.yml
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 10:56:00 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT `products`.* FROM `products` [0m
+  Rendered products/index.html.haml within layouts/application (3.4ms)
+Compiled product_category.css  (40ms)  (pid 36481)
+Compiled products.css  (1ms)  (pid 36481)
+Compiled application.css  (94ms)  (pid 36481)
+Compiled product_category.js  (73ms)  (pid 36481)
+Compiled products.js  (1ms)  (pid 36481)
+Compiled application.js  (105ms)  (pid 36481)
+Completed 200 OK in 312ms (Views: 258.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 10:56:01 -0500
+Served asset /product_category.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 10:56:01 -0500
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 10:56:01 -0500
+Served asset /product_category.css - 200 OK (2ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 10:56:01 -0500
+Served asset /products.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 10:56:01 -0500
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 10:56:01 -0500
+Served asset /products.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (67.0ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (113.7ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (196.9ms)[0m  [1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (155.6ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (139.9ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131219045332')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131218213511')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:43:52 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` ORDER BY name[0m
+  Rendered products/index.html.haml within layouts/application (3.6ms)
+Compiled product_category.css  (23ms)  (pid 56625)
+Compiled products.css  (0ms)  (pid 56625)
+Compiled application.css  (29ms)  (pid 56625)
+Compiled product_category.js  (85ms)  (pid 56625)
+Compiled products.js  (1ms)  (pid 56625)
+Compiled application.js  (93ms)  (pid 56625)
+Completed 200 OK in 202ms (Views: 159.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:43:52 -0500
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:43:52 -0500
+Served asset /product_category.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:43:52 -0500
+Served asset /product_category.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:43:52 -0500
+Served asset /products.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:43:52 -0500
+Served asset /products.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:43:52 -0500
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:44:15 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` ORDER BY name
+  Rendered products/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:44:15 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:44:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:44:15 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:44:15 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:44:15 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:44:15 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:44:18 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` ORDER BY name[0m
+  Rendered products/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:44:18 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:44:18 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:44:18 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:44:18 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:44:18 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:44:18 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:44:43 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` ORDER BY name
+  Rendered products/index.html.haml within layouts/application (49.3ms)
+Completed 500 Internal Server Error in 52ms
+
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    9: 		%th Cost
+    10: 		%th Retail
+    11: @products.each do |product|
+    12: 	%tr 
+    13: 		%td =product.name
+    14: 		%td =product.description
+    15: 		%td =product.wholesale_cost
+  app/views/products/index.html.haml:12
+
+
+  Rendered /Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:45:04 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` ORDER BY name[0m
+  Rendered products/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:45:04 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:45:04 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:45:04 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:45:04 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:45:04 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:45:04 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:52:50 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` ORDER BY name
+  Rendered products/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:52:50 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:52:50 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:52:50 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:52:50 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:52:50 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:52:50 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:53:16 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` ORDER BY name[0m
+  Rendered products/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:53:16 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:53:16 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:53:16 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:53:16 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:53:16 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:53:16 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:53:26 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` ORDER BY name
+  Rendered products/index.html.haml within layouts/application (2.9ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:53:27 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:53:27 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:53:27 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:53:27 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:53:27 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:53:27 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:54:36 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` ORDER BY name[0m
+ERROR: compiling _app_views_products_index_html_haml__972041432119550077_70294282526300 RAISED /Users/johnomalley/Rails_Projects/Rails_3.2.13/Store/app/views/products/index.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/johnomalley/Rails_Projects/Rails_3.2.13/Store/app/views/products/index.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_products_index_html_haml__972041432119550077_70294282526300(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "products/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true, :hyphenate_data_attrs=>true, :cdata=>false});_erbout = _hamlout.buffer;@output_buffer = output_buffer ||= ActionView::OutputBuffer.new rescue nil;;_hamlout.push_text("<h1>Products#index</h1>\n<p>Find me in app/views/products/index.html.haml</p>\n<h3>Products</h3>\n<table>\n  <tr>\n    <th>Product</th>\n    <th>Description</th>\n    <th>Cost</th>\n    <th>Retail</th>\n  </tr>\n", 1, false);
+
+
+
+
+
+
+
+
+
+@products.each do |product|
+_hamlout.push_text("  <tr>\n    <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((product.name
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((product.description
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((product.wholesale_cost
+));}</td>\n    <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((product.retail_price
+));}</td>\n  </tr>\n</table>\n", -2, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `module_eval'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:297:in `compile'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:244:in `block in compile!'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `synchronize'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:232:in `compile!'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:144:in `block in render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:125:in `instrument'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/template.rb:143:in `render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:414:in `_run__1459046955993796301__process_action__3123573625838804912__callbacks'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/notifications.rb:123:in `instrument'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activerecord-3.2.13/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/base.rb:121:in `process'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_controller/metal.rb:246:in `block in action'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/routing/route_set.rb:612:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activerecord-3.2.13/lib/active_record/query_cache.rb:64:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activerecord-3.2.13/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `_run__4435835111639482404__call__3784456029545612008__callbacks'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/railties-3.2.13/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/railties-3.2.13/lib/rails/rack/logger.rb:16:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/activesupport-3.2.13/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/static.rb:63:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/railties-3.2.13/lib/rails/engine.rb:479:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/railties-3.2.13/lib/rails/application.rb:223:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/railties-3.2.13/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered products/index.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (/Users/johnomalley/Rails_Projects/Rails_3.2.13/Store/app/views/products/index.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/johnomalley/Rails_Projects/Rails_3.2.13/Store/app/views/products/index.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+    14: 		%td= product.description
+    15: 		%td= product.wholesale_cost
+    16: 		%td= product.retail_price
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.13) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.13) lib/action_view/template.rb:244:in `block in compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `synchronize'
+  actionpack (3.2.13) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.13) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.13) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.13) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.13) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.13) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.13) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (3.2.13) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.13) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:414:in `_run__1459046955993796301__process_action__3123573625838804912__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.13) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.13) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.13) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.13) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.13) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.13) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4435835111639482404__call__3784456029545612008__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2013-12-19 16:54:49 -0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT `products`.* FROM `products` ORDER BY name
+  Rendered products/index.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:54:49 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:54:49 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:54:49 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:54:49 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:54:49 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:54:49 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/list_by_category/1" for 127.0.0.1 at 2013-12-19 16:56:05 -0500
+
+ActionController::RoutingError (No route matches [GET] "/list_by_category/1"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/products/list_by_category/1" for 127.0.0.1 at 2013-12-19 16:56:27 -0500
+Processing by ProductsController#list_by_category as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProductCategory Load (0.3ms)[0m  [1mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`product_category_id` = 1
+  Rendered products/list_by_category.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 368ms (Views: 23.4ms | ActiveRecord: 161.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:56:28 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:56:28 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:56:28 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:56:28 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:56:28 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:56:28 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/list_by_category/1" for 127.0.0.1 at 2013-12-19 16:56:47 -0500
+Processing by ProductsController#list_by_category as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProductCategory Load (0.4ms)[0m  [1mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.4ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`product_category_id` = 1
+  Rendered products/list_by_category.html.haml within layouts/application (3.5ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:56:47 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:56:47 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:56:47 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:56:47 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:56:47 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:56:47 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/products/list_by_category/1" for 127.0.0.1 at 2013-12-19 16:57:18 -0500
+Processing by ProductsController#list_by_category as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProductCategory Load (0.3ms)[0m  [1mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`product_category_id` = 1
+  Rendered products/list_by_category.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2013-12-19 16:57:18 -0500
+Served asset /products.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-19 16:57:18 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-19 16:57:18 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.css?body=1" for 127.0.0.1 at 2013-12-19 16:57:18 -0500
+Served asset /product_category.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-19 16:57:18 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-19 16:57:18 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+Migrating to CreateShoppingCarts (20131220013519)
+  [1m[35m (122.2ms)[0m  CREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131220013519')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (95.8ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.5ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (92.2ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (186.6ms)[0m  [1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (109.0ms)[0m  CREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (121.3ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (120.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220013519')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131218213511')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131219045332')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+Migrating to CreateShoppingCarts (20131220013519)
+Migrating to CreateCartItems (20131220014248)
+  [1m[35m (142.9ms)[0m  CREATE TABLE `cart_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131220014248')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (35.6ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (97.0ms)[0m  CREATE TABLE `cart_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (164.8ms)[0m  [1mCREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (121.0ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (120.8ms)[0m  [1mCREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (133.4ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (117.6ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220014248')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131218213511')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131219045332')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220013519')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+Migrating to CreateShoppingCarts (20131220013519)
+Migrating to CreateCartItems (20131220014248)
+Migrating to AddShoppingCartIdToCartItems (20131220014646)
+  [1m[35m (261.2ms)[0m  ALTER TABLE `cart_items` ADD `shopping_cart_id` int(11)
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131220014646')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (72.0ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (97.6ms)[0m  CREATE TABLE `cart_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `shopping_cart_id` int(11)) ENGINE=InnoDB
+  [1m[36m (186.6ms)[0m  [1mCREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (112.2ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (110.3ms)[0m  [1mCREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (98.9ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (114.7ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220014646')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131218213511')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131219045332')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220013519')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220014248')[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+Migrating to CreateShoppingCarts (20131220013519)
+Migrating to CreateCartItems (20131220014248)
+Migrating to AddShoppingCartIdToCartItems (20131220014646)
+Migrating to CreateOrders (20131220175313)
+  [1m[35m (221.7ms)[0m  CREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131220175313')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (97.6ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (98.9ms)[0m  CREATE TABLE `cart_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `shopping_cart_id` int(11)) ENGINE=InnoDB
+  [1m[36m (219.2ms)[0m  [1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (111.0ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (110.1ms)[0m  [1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (121.9ms)[0m  CREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (135.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (138.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220175313')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131218213511')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131219045332')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220013519')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220014248')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220014646')[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+Migrating to CreateShoppingCarts (20131220013519)
+Migrating to CreateCartItems (20131220014248)
+Migrating to AddShoppingCartIdToCartItems (20131220014646)
+Migrating to CreateOrders (20131220175313)
+Migrating to CreateOrderItems (20131220180716)
+  [1m[35m (223.6ms)[0m  CREATE TABLE `order_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11), `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131220180716')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (41.2ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (86.7ms)[0m  CREATE TABLE `cart_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `shopping_cart_id` int(11)) ENGINE=InnoDB
+  [1m[36m (296.4ms)[0m  [1mCREATE TABLE `order_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11), `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (121.6ms)[0m  CREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (110.6ms)[0m  [1mCREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (109.9ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (132.8ms)[0m  [1mCREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (133.7ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (255.4ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220180716')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131218213511')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131219045332')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220013519')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220014248')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220014646')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220175313')[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+Migrating to CreateShoppingCarts (20131220013519)
+Migrating to CreateCartItems (20131220014248)
+Migrating to AddShoppingCartIdToCartItems (20131220014646)
+Migrating to CreateOrders (20131220175313)
+Migrating to CreateOrderItems (20131220180716)
+Migrating to CreateCustomers (20131220193732)
+  [1m[35m (114.0ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131220193732')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (75.0ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (475.5ms)[0m  CREATE TABLE `cart_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `shopping_cart_id` int(11)) ENGINE=InnoDB
+  [1m[36m (112.0ms)[0m  [1mCREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (308.8ms)[0m  CREATE TABLE `order_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11), `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (102.0ms)[0m  [1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (110.5ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (144.0ms)[0m  [1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (274.9ms)[0m  CREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (136.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (206.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220193732')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131218213511')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131219045332')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220013519')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220014248')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220014646')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220175313')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220180716')[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+Migrating to CreateShoppingCarts (20131220013519)
+Migrating to CreateCartItems (20131220014248)
+Migrating to AddShoppingCartIdToCartItems (20131220014646)
+Migrating to CreateOrders (20131220175313)
+Migrating to CreateOrderItems (20131220180716)
+Migrating to CreateCustomers (20131220193732)
+Migrating to AddCustomerIdToShoppingCarts (20131220194423)
+  [1m[35m (163.9ms)[0m  ALTER TABLE `shopping_carts` ADD `customer_id` int(11)
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131220194423')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (68.2ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.3ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (58.9ms)[0m  CREATE TABLE `cart_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `shopping_cart_id` int(11)) ENGINE=InnoDB
+  [1m[36m (296.4ms)[0m  [1mCREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (121.2ms)[0m  CREATE TABLE `order_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11), `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (121.3ms)[0m  [1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (121.0ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (144.2ms)[0m  [1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (133.5ms)[0m  CREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `customer_id` int(11)) ENGINE=InnoDB
+  [1m[36m (120.9ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (260.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220194423')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131218213511')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131219045332')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220013519')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220014248')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220014646')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220175313')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220180716')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220193732')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+Migrating to CreateShoppingCarts (20131220013519)
+Migrating to CreateCartItems (20131220014248)
+Migrating to AddShoppingCartIdToCartItems (20131220014646)
+Migrating to CreateOrders (20131220175313)
+Migrating to CreateOrderItems (20131220180716)
+Migrating to CreateCustomers (20131220193732)
+Migrating to AddCustomerIdToShoppingCarts (20131220194423)
+Migrating to AddCustomerIdToOrders (20131220200729)
+  [1m[35m (128.6ms)[0m  ALTER TABLE `orders` ADD `customer_id` int(11)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131220200729')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (54.0ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (104.3ms)[0m  CREATE TABLE `cart_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `shopping_cart_id` int(11)) ENGINE=InnoDB
+  [1m[36m (371.9ms)[0m  [1mCREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (79.1ms)[0m  CREATE TABLE `order_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11), `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (121.5ms)[0m  [1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `customer_id` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (132.8ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (133.0ms)[0m  [1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (144.2ms)[0m  CREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `customer_id` int(11)) ENGINE=InnoDB
+  [1m[36m (259.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (157.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220200729')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131218213511')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131219045332')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220013519')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220014248')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220014646')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220175313')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220180716')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220193732')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220194423')[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateProductCategories (20131218213511)
+Migrating to CreateProducts (20131219045332)
+Migrating to CreateShoppingCarts (20131220013519)
+Migrating to CreateCartItems (20131220014248)
+Migrating to AddShoppingCartIdToCartItems (20131220014646)
+Migrating to CreateOrders (20131220175313)
+Migrating to CreateOrderItems (20131220180716)
+Migrating to CreateCustomers (20131220193732)
+Migrating to AddCustomerIdToShoppingCarts (20131220194423)
+Migrating to AddCustomerIdToOrders (20131220200729)
+Migrating to AddCustomerTokenToCustomer (20131220203802)
+  [1m[35m (122.7ms)[0m  ALTER TABLE `customers` ADD `customer_token` varchar(255)
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20131220203802')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (48.6ms)[0m  DROP DATABASE IF EXISTS `store_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `store_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (129.7ms)[0m  CREATE TABLE `cart_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `shopping_cart_id` int(11)) ENGINE=InnoDB
+  [1m[36m (275.2ms)[0m  [1mCREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `customer_token` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (165.1ms)[0m  CREATE TABLE `order_items` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `order_id` int(11), `product_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (99.3ms)[0m  [1mCREATE TABLE `orders` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `customer_id` int(11)) ENGINE=InnoDB[0m
+  [1m[35m (134.8ms)[0m  CREATE TABLE `product_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (133.2ms)[0m  [1mCREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `product_category_id` int(11), `wholesale_cost` int(11), `retail_price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (133.5ms)[0m  CREATE TABLE `shopping_carts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `cart_token` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `customer_id` int(11)) ENGINE=InnoDB
+  [1m[36m (286.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (106.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220203802')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131218213511')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131219045332')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220013519')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220014248')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220014646')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220175313')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220180716')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220193732')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20131220194423')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20131220200729')
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml

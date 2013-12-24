@@ -1,0 +1,16 @@
+=form_for @product do |f|
+	%table 
+		%tr 
+			%td= f.label :name, "Name"
+			%td= f.text_field :name
+		%tr 
+			%td= f.label :description, "Description"
+			%td= f.text_field :description
+		%tr 
+			%td= f.label :retail_price, "Retail Price"
+			%td= f.number_field :retail_price
+		%tr 
+			%td= f.label :wholesale_cost, "Wholesale Cost"
+			%td= f.number_field :wholesale_cost
+		%tr 
+			%td{:colspan => "2"}= f.submit "Save"

@@ -1,0 +1,12 @@
+# Read about factories at https://github.com/thoughtbot/factory_girl
+
+FactoryGirl.define do
+  factory :product do
+    #sequence(:name) {|n| "Product #{n}"}
+    name "Product Name"
+    description "Product #{name} is an etc..."
+    product_category
+    wholesale_cost 100
+    retail_price 150
+  end
+end

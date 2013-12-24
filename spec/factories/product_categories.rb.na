@@ -1,0 +1,7 @@
+FactoryGirl.define do
+
+	factory :product_category do
+		#sequence(:name) {|n| "Product_##{n}"}
+		name "Category Name"
+	end
+end

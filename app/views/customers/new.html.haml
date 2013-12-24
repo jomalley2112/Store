@@ -1,0 +1,15 @@
+%h3 New Customer Sign-up
+
+=form_for(@customer, :method => :post) do |f|
+	%table 
+		%tr 
+			%td= f.label :first_name, "First Name"
+			%td= f.text_field :first_name
+		%tr 
+			%td= f.label :last_name, "Last Name"
+			%td= f.text_field :last_name
+		%tr 
+			%td= f.label :address, "Address"
+			%td= f.text_field :address
+		%tr 
+			%td{:colspan => "2"}= f.submit "Create" 

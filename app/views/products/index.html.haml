@@ -1,0 +1,26 @@
+
+%h3 Products
+%br
+= form_tag("/products", :method => "get") do
+	= label_tag(:txt_search, "Find:")
+	= text_field_tag(:txt_search)
+	= submit_tag("Go")
+%table 
+	%tr 
+		%th Product
+		%th Description
+		%th Cost
+		%th Retail
+		%th 
+	-@products.each do |product|
+		%tr 
+			%td= product.name
+			%td= product.description
+			%td= product.wholesale_cost
+			%td= product.retail_price
+			-if @admin
+				%td
+					= link_to("Edit", edit_product_path(product)) |
+					= link_to("Delete", product, method: :delete)
+			-else
+				%td= link_to("Add to Cart", add_product_to_cart_path(:product_id => product.id))

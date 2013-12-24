@@ -1,0 +1,15 @@
+%h3= "View the Details of order ##{@order.id}"
+%div= "Order made by: #{@order.customer.last_name}, #{@order.customer.first_name}"
+%div= "Order made on: #{@order.created_at}"
+%table 
+	%tr 
+		%th Product
+		%th Description
+		%th Wholesale Cost
+		%th Retail Price
+	-@order.order_items.each do |order_item|
+		%tr 
+			%td= order_item.product.name
+			%td= order_item.product.description
+			%td= order_item.product.wholesale_cost
+			%td= order_item.product.retail_price

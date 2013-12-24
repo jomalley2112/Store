@@ -1,0 +1,15 @@
+%h1 Products#list_by_category
+
+%h3= "Products in Category: #{@cat.name}"
+%table 
+	%tr 
+		%th Product
+		%th Description
+		%th Cost
+		%th Retail
+	-@products.each do |product|
+		%tr 
+			%td= product.name
+			%td= product.description
+			%td= product.wholesale_cost
+			%td= product.retail_price

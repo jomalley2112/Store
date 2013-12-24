@@ -1,0 +1,18 @@
+E-Commerce Store
+
+
+
+Done
+Our online store contains multiple products where many customers can shop concurrently.  Storekeepers have unlimited supply of products.
+Storekeepers can view the details of one order
+Storekeepers can view a list of customer orders
+Storekeepers can remove products that have not been previously sold
+Storekeepers can update product information
+Storekeepers can add products
+Customers can view their order history
+Customers checkout
+Customers empty a shopping cart
+Customers fill a shopping cart
+Customers can browse the products by category
+Products have a name, description, category, wholesale cost, and retail price
+Customers can search for products
