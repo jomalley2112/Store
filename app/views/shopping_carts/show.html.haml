@@ -1,7 +1,10 @@
+-if @can_place_order
+	-display_btn_attr = {}
+-else
+	-display_btn_attr = {:disabled => "disabled"}
 %h3 Your Shopping Cart
 %br/
-= link_to "View All Products", products_path 
-%table 
+%table{:class => "frm"}
 	%tr 
 		%th Product
 		%th Description
@@ -11,10 +14,12 @@
 		%tr 
 			%td= item.product.name
 			%td= item.product.description 
-			%td= item.product.retail_price
+			%td= to_dollars(item.product.retail_price)
 			%td= item.created_at
 	%tr 
-		%td{:colspan => "%4"}= button_to("Place Order", place_order_path(@user), :method => :get)
+		%td{:colspan => "4"} &nbsp;
+	%tr 
+		%td{:colspan => "4", :style => "text-align: center"}= button_to("Place Order", place_order_path(@user), {:method => :get}.merge(display_btn_attr))
 %br/ 
  
-= link_to "Empty Shopping Cart", clear_cart_path() #, :data => {:confirm => 'Are you sure?'}
+= link_to "Empty Shopping Cart", clear_cart_path(), :style => "color: #f85164" unless @cart_items.length < 1

@@ -98,6 +98,9 @@ GEM
     json (1.8.1)
     less (2.4.0)
       commonjs (~> 0.2.7)
+    less-rails (2.4.2)
+      actionpack (>= 3.1)
+      less (~> 2.4.0)
     libv8 (3.16.14.3)
     listen (2.4.0)
       celluloid (>= 0.15.2)
@@ -190,6 +193,11 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    twitter-bootstrap-rails (2.2.8)
+      actionpack (>= 3.1)
+      execjs
+      rails (>= 3.1)
+      railties (>= 3.1)
     tzinfo (0.3.38)
     uglifier (2.3.3)
       execjs (>= 0.3.0)
@@ -212,6 +220,7 @@ DEPENDENCIES
   haml-rails
   jquery-rails
   less
+  less-rails
   mysql2
   pry
   rails (= 3.2.13)
@@ -219,4 +228,5 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   selenium-webdriver
   therubyracer
+  twitter-bootstrap-rails
   uglifier (>= 1.0.3)

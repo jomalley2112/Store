@@ -7,17 +7,40 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<% if @shopping_cart %>
-	<%= link_to("View Shopping Cart", shopping_cart_path(@shopping_cart)) %>
-<% end %>
-<br />
-<%#= binding.pry %>
-<% if @customer %>
-	<%= link_to("View Order History", customer_orders_path(:customer_id => @customer.id)) %>
-<% end %>
 
-<%= render "flash_messages" %>
-<%= yield %>
+<% path_to_prods = @admin ? admin_products_path : products_path %>
+<div id="container" style="width: 600px;">
+	<div class="navbar-inner" style="border: none; background-color: #ffffff; background-image: none; box-shadow: none">
+		<div  class="navbar" style="text-align: center;">
+		  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </a>
+	      
+	      <div class="nav-collapse">
+			<ul class="nav nav-pills">
+	      		<a class="brand" href="/">The Store</a>
+				<li class="active"><%= link_to "Products", path_to_prods %></li>
+				<li class="active"><%= link_to "Categories", product_categories_path %></li>
+				<% if @shopping_cart && !@admin %>
+					<li class="active"><%= link_to("Shopping Cart", shopping_cart_path(@shopping_cart)) %></li>
+				<% end %>
+				<% if @customer && @customer.id #so it can't be an empty, unsaved, new user %>
+					<li class="active"><%= link_to("Order History", customer_orders_path(:customer_id => @customer.id)) %></li>
+				<% end %>
+				<% if @admin %>
+					<li class="active"><%= link_to "All Orders" , orders_path %></li>
+				<% end %>
+			</ul>
+		  </div>
+			
+		</div>
+	</div>
+	<%= render "flash_messages" %>
+	<%= yield %>
+</div>
 
 </body>
 </html>

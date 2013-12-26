@@ -1,7 +1,8 @@
 %h3 New Customer Sign-up
 
 =form_for(@customer, :method => :post) do |f|
-	%table 
+	= hidden_field_tag(:from_order, params[:from_order])
+	%table{:class => "frm"}
 		%tr 
 			%td= f.label :first_name, "First Name"
 			%td= f.text_field :first_name
@@ -12,4 +13,4 @@
 			%td= f.label :address, "Address"
 			%td= f.text_field :address
 		%tr 
-			%td{:colspan => "2"}= f.submit "Create" 
+			%td{:colspan => "2", :style => "text-align: center;"}= f.submit "Create" 

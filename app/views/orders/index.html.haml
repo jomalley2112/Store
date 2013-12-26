@@ -1,18 +1,19 @@
 %h3 View All Orders
 -@orders.each do |order|
-	%table 
-		%tr 
-			%td{:colspan => "4"}
-				= link_to("Order "+order.id.to_s, order_path(order))
-				= " made on #{order.created_at}, by #{order.customer.last_name}, #{order.customer.first_name}"
-		%tr 
-			%th Customer
-			%th Product
-			%th Description
-			%th Price
+	= link_to("Order "+order.id.to_s, order_path(order))
+	= " made on #{order.created_at}, by #{order.customer.last_name}, #{order.customer.first_name}"
+	%table{:class => "table table-bordered table-striped"} 
+		%thead 
+			%tr 
+				%th Customer
+				%th Product
+				%th Description
+				%th{:style => "width: 100px"} Cost
+				%th{:style => "width: 100px"} Retail Price
 		-order.order_items.each do |order_item|
 			%tr 
 				%td= order.customer.last_name+", "+order.customer.first_name
 				%td= order_item.product.name
 				%td= order_item.product.description
-				%td= order_item.product.retail_price
+				%td= to_dollars(order_item.product.wholesale_cost)
+				%td= to_dollars(order_item.product.retail_price)

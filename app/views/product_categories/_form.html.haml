@@ -1,13 +1,21 @@
-= form_for @product_category do |f|
-  - if @product_category.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@product_category.errors.count, "error")} prohibited this product_category from being saved:"
-      %ul
-        - @product_category.errors.full_messages.each do |msg|
-          %li= msg
-
-  .field
-    = f.label :name
-    = f.text_field :name
-  .actions
-    = f.submit 'Save'
+%table{:class => "frm"} 
+  %tr 
+    %td 
+  = form_for @product_category do |f|
+    - if @product_category.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@product_category.errors.count, "error")} prohibited this product_category from being saved:"
+        %ul
+          - @product_category.errors.full_messages.each do |msg|
+            %li= msg
+    %tr 
+      %td 
+        = f.label :name
+        = f.text_field :name, :style => "width: 300px"
+    %tr 
+      %td &nbsp;
+    %tr 
+      %td 
+        .actions{:style => "text-align: center"}
+          = f.submit 'Save'
+ 

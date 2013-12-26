@@ -1,5 +1,6 @@
+
 =form_for @product do |f|
-	%table 
+	%table{:class => "frm"}
 		%tr 
 			%td= f.label :name, "Name"
 			%td= f.text_field :name
@@ -13,4 +14,4 @@
 			%td= f.label :wholesale_cost, "Wholesale Cost"
 			%td= f.number_field :wholesale_cost
 		%tr 
-			%td{:colspan => "2"}= f.submit "Save"
+			%td{:colspan => "2", :style => "text-align: center"}= f.submit "Save"

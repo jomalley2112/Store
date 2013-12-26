@@ -36,11 +36,25 @@ feature "Products", :js => false do
       pop_prods
       visit products_path
       fill_in("txt_search", :with => "Product 1")
-      #binding.pry
       click_button "Go"
       page.should have_content("Product 1")
       page.should have_no_content("Product 2")
-    end 
+    end
+
+    it "allows customers to clear the search box and have an unfiltered view of products", :js => true do
+      pop_prods
+      visit products_path
+      fill_in("txt_search", :with => "Product 1")
+      click_button "Go"
+      page.should have_content("Product 1")
+      page.should have_no_content("Product 2")
+      find_field('txt_search').value.should eq("Product 1")
+      click_button("Clear")
+      find_field('txt_search').value.should eq("") 
+      page.should have_content("Product 1")
+      page.should have_content("Product 2")
+      page.should have_content("Product 3")
+    end
   end
      
   describe "Customers can fill a shopping cart" do
@@ -57,7 +71,9 @@ feature "Products", :js => false do
 
   describe "Storekeepers" do
   	it "allows them to add new products", :js => false do
-      visit new_product_path #this shoud be a link that's only available to Storekeepers
+      #visit new_product_path #this shoud be a link that's only available to Storekeepers
+      visit admin_products_path
+      click_link("Add New")
       fill_in("Name", :with => "Product 1")
       fill_in("Description", :with => "This product is...")
       fill_in("Retail Price", :with => "100")

@@ -10,8 +10,9 @@ class ProductsController < ApplicationController
 
   
   def admin
+    #All Admins must first go through this action
     @admin = true
-    #binding.pry
+    session[:admin] = "true" #once this is set the application_contoller handles setting the variable
     @products = Product.where(where_clause).order(:name).all
     render :index
   end
@@ -45,11 +46,13 @@ class ProductsController < ApplicationController
 
   def new
     @product = Product.new
+    #@admin = true
   end
 
   def create
     @product = Product.new(params[:product])
     if @product.save
+      #@admin = true
       redirect_to new_product_path, :notice => "Product Saved!"
     else
       render :new
@@ -58,13 +61,15 @@ class ProductsController < ApplicationController
 
   def edit
     @product = Product.find(params[:id])
+    #@admin = true
   end
 
   def update
     @product = Product.find(params[:id])
 
     if @product.update_attributes(params[:product])
-      redirect_to edit_product_path(@product), :alert => "Product Updated!"
+      #@admin = true
+      redirect_to edit_product_path(@product), :notice => "Product Updated!"
     else
       render :edit
     end
@@ -72,8 +77,9 @@ class ProductsController < ApplicationController
 
   def destroy
     @product = Product.find(params[:id])
+    #@admin = true
     @product.destroy
-    redirect_to admin_products_path, :alert => 'Product Deleted!'
+    redirect_to admin_products_path, :notice => 'Product Deleted!'
   end
 
 end

@@ -1,0 +1,16 @@
+<div style="text-align: center;">
+	<%= link_to "View All Products", path_to_prods %> | 
+	<%= link_to "Product Categories", product_categories_path %>
+	<% if @shopping_cart && !@admin %>
+		| 
+		<%= link_to("View Shopping Cart", shopping_cart_path(@shopping_cart)) %>
+	<% end %>
+	<% if @customer && @customer.id #so it can't be an empty, unsaved, new user %>
+		 | 
+		<%= link_to("View your Order History", customer_orders_path(:customer_id => @customer.id)) %>
+	<% end %>
+	<% if @admin %>
+		 | 
+		<%= link_to "View All Orders" , orders_path %>
+	<% end %>
+</div>

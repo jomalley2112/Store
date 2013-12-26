@@ -12,18 +12,15 @@ describe "Customers" do
       all(:link, "Add to Cart")[3].click
       click_link("View All Products")
       all(:link, "Add to Cart")[6].click
-      
       click_button("Place Order")
       create_new_customer
-      click_link "View Shopping Cart"
-      click_button("Place Order") #probably  shouldn't make them go back to the cart and clikc Place Order again
-
       click_link("View All Products")
+      #add some more products
       all(:link, "Add to Cart")[2].click
       click_link("View All Products")
       all(:link, "Add to Cart")[8].click
       click_button("Place Order")
-      click_link("View Order History")
+      click_link("View your Order History")
       
   		page.should have_content("Product 1b")
   		page.should have_content("Product 2a")

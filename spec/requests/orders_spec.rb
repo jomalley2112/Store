@@ -14,9 +14,9 @@ describe "Orders" do
   		pop_cart
   		visit orders_path
   		click_on("Order 2")
-  		page.should have_content("JacobsLadder, John")
-  		page.should have_content("100")
-  		page.should have_content("150")
+      page.should have_content("JacobsLadder, John")
+  		page.should have_content("$1.00")
+  		page.should have_content("$1.50")
   		page.should have_content("Product 1c")
   		page.should have_content("Product 3b")
   		page.should have_no_content("Product 1a")

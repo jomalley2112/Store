@@ -31,9 +31,9 @@ describe "ShoppingCarts" do
   		first(:link, "Add to Cart").click
   		click_button("Place Order") 
   		create_new_customer
-  		page.should have_content("Congratulations your customer profile was successfully created")
-  		click_link "View Shopping Cart"
-  		click_button("Place Order")
+  		# page.should have_content("Congratulations your customer profile was successfully created")
+  		# click_link "View Shopping Cart"
+  		# click_button("Place Order")
   		page.should have_content("Your order has been submitted")
 
   	end

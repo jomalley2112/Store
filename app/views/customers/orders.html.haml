@@ -1,17 +1,16 @@
 %h3= "Order History for #{@customer.last_name+', '+@customer.first_name}"
 
 -@customer.orders.each do |order|
-	%table 
-		%tr 
-			%td{:colspan => "3"}
-				%h5= "Order ##{order.id} made on #{order.created_at}"
-		%tr 
-			%th Product
-			%th Description
-			%th Price
+	%div= "Order ##{order.id} made on #{order.created_at}"
+	%table{:class => "table table-bordered table-striped"}
+		%thead 
+			%tr 
+				%th Product
+				%th Description
+				%th Price
 		-order.order_items.each do |order_item|
 			%tr 
 				%td= order_item.product.name
 				%td= order_item.product.description
-				%td= order_item.product.retail_price
-		
+				%td= to_dollars(order_item.product.retail_price)
+	%br/ 	

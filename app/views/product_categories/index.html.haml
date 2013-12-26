@@ -1,19 +1,17 @@
-%h1 Listing product_categories
 
-%table
-  %tr
-    %th Name
-    %th
-    %th
-    %th
+%h3 Listing Product Categories
 
+%table{:class => "frm"}
+    
   - @product_categories.each do |product_category|
     %tr
       %td= product_category.name
-      %td= link_to 'Show', product_category
-      %td= link_to 'Edit', edit_product_category_path(product_category)
-      %td= link_to 'Destroy', product_category, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
+      %td{:style => "width: 25%"}
+        -if @admin
+          = link_to 'Edit', edit_product_category_path(product_category)
+          = link_to 'Destroy', product_category, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        -else
+          = link_to 'Products', list_by_category_path(product_category)
 %br
 
 = link_to 'New Product category', new_product_category_path

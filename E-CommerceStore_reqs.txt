@@ -1,8 +1,17 @@
 E-Commerce Store
 
+TODO:
+Your shoipping cart back to products button
+
+Working
+
+
+
 
 
 Done
+Add clear functionality to search box
+
 Our online store contains multiple products where many customers can shop concurrently.  Storekeepers have unlimited supply of products.
 Storekeepers can view the details of one order
 Storekeepers can view a list of customer orders
@@ -16,3 +25,25 @@ Customers fill a shopping cart
 Customers can browse the products by category
 Products have a name, description, category, wholesale cost, and retail price
 Customers can search for products
+
+
+
+
+
+Views
+
+app/views/customers/new.html.haml
+app/views/customers/orders.html.haml
+app/views/orders/index.html.haml
+app/views/orders/show.html.haml
+app/views/product_categories/_form.html.haml
+app/views/product_categories/edit.html.haml
+app/views/product_categories/index.html.haml
+app/views/product_categories/new.html.haml
+app/views/product_categories/show.html.haml
+app/views/products/_form.html.haml
+app/views/products/edit.html.haml
+app/views/products/index.html.haml
+app/views/products/list_by_category.html.haml
+app/views/products/new.html.haml
+app/views/shopping_carts/show.html.haml

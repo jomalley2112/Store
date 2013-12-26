@@ -8,6 +8,36 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
  *= require_tree .
+ *= require_self
  */
+
+td.dollars {text-align: right;}
+input[type="number"] {width: 45px;}
+thead > tr > th {background-color: #e2e2e2;}
+input[type=text] { margin-bottom: 0px;}
+
+table.list {
+    filter:alpha(opacity=92);
+    opacity:.92;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+
+    }
+
+table.frm {
+    filter:alpha(opacity=92);
+    opacity:.92;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	border-collapse: separate; 
+	border-spacing: 10px;
+    width: 90%;
+    border: 2px #888888 solid
+    }
+
+    
