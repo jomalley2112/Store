@@ -75,10 +75,12 @@ feature "Products", :js => false do
   describe "Storekeepers" do
   	it "allows them to add new products", :js => false do
       #visit new_product_path #this shoud be a link that's only available to Storekeepers
+      FactoryGirl.create(:product_category)
       visit admin_products_path
       click_link("Add New")
       fill_in("Name", :with => "Product 1")
       fill_in("Description", :with => "This product is...")
+      select("Category 1", :from => "Category")
       fill_in("Retail Price", :with => "100")
       fill_in("Wholesale Cost", :with => "90")
       click_button("Save")
@@ -95,6 +97,12 @@ feature "Products", :js => false do
       page.should have_content("This product can be decribed...")
 
   	end
+
+    it "displays a message when there aren't any categories to add a new product to", :js => false do
+      visit admin_products_path
+      click_link("Add New")
+      page.should have_content("Please add at least one category before adding any products.")
+    end
 
 
   	it "allows them to update product information", :js => false do

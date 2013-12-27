@@ -1,6 +1,13 @@
 require 'spec_helper'
 
 describe "ShoppingCarts" do
+  describe "customers view their shopping cart" do
+    it "displays a message when there aren't any productys in it", :js => false do
+      visit shopping_cart_path(1)
+      page.should have_content("There currently aren't any items in your cart.")
+    end
+  end
+
   describe "Customers empty a shopping cart" do
   	it "drops any products that are in it", :js => false do
   		pop_prods

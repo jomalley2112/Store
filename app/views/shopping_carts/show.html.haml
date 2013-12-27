@@ -10,6 +10,9 @@
 		%th Description
 		%th Price
 		%th Date Added to Cart
+	-if @cart_items.length < 1
+		%tr
+			%td.alert{:colspan => "4"} There currently aren't any items in your cart. 
 	-@cart_items.each do |item|
 		%tr 
 			%td= item.product.name

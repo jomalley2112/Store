@@ -1,17 +1,23 @@
-
-=form_for @product do |f|
-	%table{:class => "frm"}
-		%tr 
-			%td= f.label :name, "Name"
-			%td= f.text_field :name
-		%tr 
-			%td= f.label :description, "Description"
-			%td= f.text_field :description
-		%tr 
-			%td= f.label :retail_price, "Retail Price"
-			%td= f.number_field(:retail_price) + "&nbsp;(in cents)".html_safe
-		%tr 
-			%td= f.label :wholesale_cost, "Wholesale Cost"
-			%td= f.number_field(:wholesale_cost) + "&nbsp;(in cents)".html_safe
-		%tr 
-			%td{:colspan => "2", :style => "text-align: center"}= f.submit "Save"
+-@cats = ProductCategory.order(:name).all.map { |cat| [cat.name, cat.id]}
+-if @cats.length < 1
+	.alert Please add at least one category before adding any products.
+-else
+	=form_for @product do |f|
+		%table{:class => "frm"}
+			%tr 
+				%td= f.label :name, "Name"
+				%td= f.text_field :name
+			%tr 
+				%td= f.label :description, "Description"
+				%td= f.text_field :description
+			%tr 
+				%td= f.label :product_category_id, "Category"
+				%td= f.select :product_category_id, @cats
+			%tr 
+				%td= f.label :retail_price, "Retail Price"
+				%td= f.number_field(:retail_price) + "&nbsp;(in cents)".html_safe
+			%tr 
+				%td= f.label :wholesale_cost, "Wholesale Cost"
+				%td= f.number_field(:wholesale_cost) + "&nbsp;(in cents)".html_safe
+			%tr 
+				%td{:colspan => "2", :style => "text-align: center"}= f.submit "Save"

@@ -8,7 +8,7 @@
 </head>
 <body>
 	<% path_to_prods = @admin ? admin_products_path : products_path %>
-	<table style="width: 550px;">
+	<table style="width: 550px; background-color: white">
 		<tr>
 			<td style="text-align: left;">You are currently acting as a <b><%= get_role(@admin) %></b></td>
 			<td style="text-align: right;"><%= link_to("Click here to switch Roles", switch_roles_path) %></td>
