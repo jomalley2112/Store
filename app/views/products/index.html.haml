@@ -17,6 +17,9 @@
 			%th{:style => "width:100px"} Retail
 			%th{:style => "width:100px"} 
 	%tbody 
+		-if @products.length < 1
+			%tr 
+				%td.alert{:colspan => "4"} Currently there aren't any products in stock.
 		-@products.each do |product|
 			%tr 
 				%td= product.name

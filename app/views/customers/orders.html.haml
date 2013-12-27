@@ -1,5 +1,6 @@
 %h3= "Order History for #{@customer.last_name+', '+@customer.first_name}"
-
+-if @customer.orders.length < 1
+	.alert You have no previous orders. 
 -@customer.orders.each do |order|
 	%div= "Order ##{order.id} made on #{order.created_at}"
 	%table{:class => "table table-bordered table-striped"}

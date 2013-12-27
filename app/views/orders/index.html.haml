@@ -1,4 +1,6 @@
 %h3 View All Orders
+-if @orders.length < 1
+	.alert There aren't any orders.
 -@orders.each do |order|
 	= link_to("Order "+order.id.to_s, order_path(order))
 	= " made on #{order.created_at}, by #{order.customer.last_name}, #{order.customer.first_name}"

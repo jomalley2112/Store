@@ -3,7 +3,12 @@ require 'spec_helper'
 feature "Products", :js => false do
   
   describe "Customers can browse the products by category" do
-  	it "displays the current products" do
+  	it "shows message when there aren't any products", :js => false do
+      visit products_path
+      page.should have_content("Currently there aren't any products in stock.")
+    end
+
+    it "displays the current products" do
   		product = FactoryGirl.create(:product)  
   		visit products_path
   		page.should have_content("Product 1")

@@ -31,6 +31,16 @@ describe "Customers" do
   		     
   	end
 
+    it "displays a message if the customer has no previous orders", :js => false do
+      #click_link("Order History") #SHouldn't need to worry about this because link isn't displayed if there aren't any previous orders
+      pop_prods
+      visit products_path
+      all(:link, "Add to Cart")[1].click
+      visit new_customer_path
+      create_new_customer
+      visit customer_orders_path
+      page.should have_content("You have no previous orders.")
+    end
   	
   end
 end

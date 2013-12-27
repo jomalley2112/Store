@@ -67813,3 +67813,444 @@ Served asset /shopping_carts.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-27 14:51:40 -0500
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/customer/orders?customer_id=3" for 127.0.0.1 at 2013-12-27 15:25:43 -0500
+Processing by CustomersController#orders as HTML
+  Parameters: {"customer_id"=>"3"}
+  [1m[36mShoppingCart Load (0.3ms)[0m  [1mSELECT `shopping_carts`.* FROM `shopping_carts` WHERE `shopping_carts`.`cart_token` = 'e27c3e8c-6368-45f2-a2f9-c33f1aee3acb' LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`customer_token` = 'd4fa4842-80bf-42a7-9935-5fb9da22c120' LIMIT 1
+  [1m[36mOrder Load (0.3ms)[0m  [1mSELECT `orders`.* FROM `orders` WHERE `orders`.`customer_id` = 3[0m
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 8
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 9[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  Rendered customers/orders.html.haml within layouts/application (35.0ms)
+Compiled bootstrap_and_overrides.css  (793ms)  (pid 67766)
+Compiled application.css  (798ms)  (pid 67766)
+Compiled bootstrap.js  (3ms)  (pid 67766)
+Compiled customers.js  (0ms)  (pid 67766)
+Compiled orders.js  (0ms)  (pid 67766)
+Compiled product_category.js  (0ms)  (pid 67766)
+Compiled products.js  (0ms)  (pid 67766)
+Compiled shopping_carts.js  (1ms)  (pid 67766)
+Compiled application.js  (82ms)  (pid 67766)
+  Rendered application/_flash_messages.html.haml (0.1ms)
+Completed 200 OK in 1034ms (Views: 1025.5ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shopping_carts.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /shopping_carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-27 15:25:44 -0500
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/roles/switch" for 127.0.0.1 at 2013-12-27 15:36:59 -0500
+Processing by RolesController#switch as HTML
+  [1m[36mShoppingCart Load (0.3ms)[0m  [1mSELECT `shopping_carts`.* FROM `shopping_carts` WHERE `shopping_carts`.`cart_token` = 'e27c3e8c-6368-45f2-a2f9-c33f1aee3acb' LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`customer_token` = 'd4fa4842-80bf-42a7-9935-5fb9da22c120' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-27 15:36:59 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mShoppingCart Load (0.5ms)[0m  [1mSELECT `shopping_carts`.* FROM `shopping_carts` WHERE `shopping_carts`.`cart_token` = 'e27c3e8c-6368-45f2-a2f9-c33f1aee3acb' LIMIT 1[0m
+  [1m[35mCustomer Load (0.5ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`customer_token` = 'd4fa4842-80bf-42a7-9935-5fb9da22c120' LIMIT 1
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT `products`.* FROM `products` WHERE (1=1) ORDER BY name[0m
+  Rendered products/index.html.haml within layouts/application (9.8ms)
+  Rendered application/_flash_messages.html.haml (0.2ms)
+Completed 200 OK in 116ms (Views: 111.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shopping_carts.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /shopping_carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:00 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Processing by OrdersController#index as HTML
+  [1m[35mShoppingCart Load (0.3ms)[0m  SELECT `shopping_carts`.* FROM `shopping_carts` WHERE `shopping_carts`.`cart_token` = 'e27c3e8c-6368-45f2-a2f9-c33f1aee3acb' LIMIT 1
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`customer_token` = 'd4fa4842-80bf-42a7-9935-5fb9da22c120' LIMIT 1[0m
+  [1m[35mOrder Load (0.3ms)[0m  SELECT `orders`.* FROM `orders` ORDER BY created_at
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 2 LIMIT 1
+  [1m[36mOrderItem Load (0.3ms)[0m  [1mSELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 2 LIMIT 1[0m
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 2 LIMIT 1
+  [1m[36mOrderItem Load (0.3ms)[0m  [1mSELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 2 LIMIT 1[0m
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 2 LIMIT 1
+  [1m[36mOrderItem Load (0.2ms)[0m  [1mSELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 3 LIMIT 1[0m
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 8
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[35mProduct Load (0.3ms)[0m  SELECT `products`.* FROM `products` WHERE `products`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 3 LIMIT 1[0m
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 9
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  Rendered orders/index.html.haml within layouts/application (34.4ms)
+  Rendered application/_flash_messages.html.haml (0.1ms)
+Completed 200 OK in 106ms (Views: 96.0ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /customers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/product_category.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /product_category.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /products.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/shopping_carts.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /shopping_carts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-27 15:37:02 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/customers" for 127.0.0.1 at 2013-12-27 15:41:13 -0500
+
+AbstractController::ActionNotFound (The action 'index' could not be found for CustomersController):
+  actionpack (3.2.13) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.13) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.13) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.13) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__1624312950974191158__call__1464075840485615982__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/johnomalley/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/johnomalley/.rvm/gems/ruby-2.0.0-p0@global/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)

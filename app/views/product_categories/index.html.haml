@@ -1,8 +1,8 @@
-
 %h3 Listing Product Categories
-
 %table{:class => "frm"}
-    
+  -if @product_categories.length < 1
+    %tr 
+      %td.alert{:colspan => "2"} Currently there aren't any product categories defined.
   - @product_categories.each do |product_category|
     %tr
       %td= product_category.name
