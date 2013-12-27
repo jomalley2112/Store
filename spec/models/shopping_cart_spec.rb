@@ -13,8 +13,6 @@ describe ShoppingCart do
 
   it "processes orders" do
   	pop_prods
-  	#cart = FactoryGirl.create(:shopping_cart)
-  	#binding.pry
   	cart = FactoryGirl.create(:customer).create_shopping_cart
   	cart.add_product(Product.find_by_name("Product 1b"))
   	cart.add_product(Product.find_by_name("Product 2b"))

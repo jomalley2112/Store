@@ -20,6 +20,7 @@ Store::Application.routes.draw do
   get "shopping_carts/place_order" => "shopping_carts#place_order", :as => "place_order"
   get "customer/orders" => "customers#orders", :as => "customer_orders"
   get "products/admin" => "products#admin", :as => "admin_products"
+  get "roles/switch" => "roles#switch", :as => "switch_roles"
   
 
   resources :product_categories

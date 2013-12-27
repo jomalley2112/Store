@@ -8,19 +8,19 @@ describe "Customers" do
   		pop_prods
       visit products_path
       all(:link, "Add to Cart")[1].click
-      click_link("View All Products")
+      click_link("Products") 
       all(:link, "Add to Cart")[3].click
-      click_link("View All Products")
+      click_link("Products")
       all(:link, "Add to Cart")[6].click
       click_button("Place Order")
       create_new_customer
-      click_link("View All Products")
+      click_link("Products")
       #add some more products
       all(:link, "Add to Cart")[2].click
-      click_link("View All Products")
+      click_link("Products")
       all(:link, "Add to Cart")[8].click
       click_button("Place Order")
-      click_link("View your Order History")
+      click_link("Order History")
       
   		page.should have_content("Product 1b")
   		page.should have_content("Product 2a")

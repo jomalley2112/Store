@@ -4,9 +4,7 @@ feature "Products", :js => false do
   
   describe "Customers can browse the products by category" do
   	it "displays the current products" do
-  		#product_category = ProductCategory.create :name => "Cat 1"
-  		#product = product_category.products.create :name => "product 1", :description => "Some Description.", :wholesale_cost => 100, :retail_price => 150
-      product = FactoryGirl.create(:product)  
+  		product = FactoryGirl.create(:product)  
   		visit products_path
   		page.should have_content("Product 1")
     end 
