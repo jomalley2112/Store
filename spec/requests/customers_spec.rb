@@ -4,7 +4,16 @@ describe "Customers" do
   
  
   describe "Customers can view their order history", :js => false do
-  	it "lists a customer's previous orders" do
+    it "does not allow a customer to place an order without specifying their name", :js => false do
+      pop_prods
+      visit products_path
+      all(:link, "Add to Cart")[1].click
+      click_button("Place Order")
+      click_button("Create")
+      page.should have_content("Customer was Not saved. Please make sure all fields are filled in.")
+    end
+
+  	it "lists a customer's previous orders", :js => false do
   		pop_prods
       visit products_path
       all(:link, "Add to Cart")[1].click
@@ -27,6 +36,8 @@ describe "Customers" do
       page.should have_content("Product 3a")
       page.should have_content("Product 1c")
       page.should have_content("Product 3c")
+      page.should have_content("$6.00")
+      page.should have_content("$4.00")
   		page.should have_no_content("Product 1a")
   		     
   	end

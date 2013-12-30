@@ -6,6 +6,17 @@ describe "ShoppingCarts" do
       visit shopping_cart_path(1)
       page.should have_content("There currently aren't any items in your cart.")
     end
+    it "displays the total retail price of all the items in it", :js => false do
+      pop_prods
+      visit products_path
+      all(:link, "Add to Cart")[0].click
+      click_link("Products")
+      all(:link, "Add to Cart")[3].click
+      page.should have_content("$3.00") # $1 + $2
+      click_link("Products")
+      all(:link, "Add to Cart")[6].click
+      page.should have_content("$6.00") # $1 + $2 + $3
+    end
   end
 
   describe "Customers empty a shopping cart" do

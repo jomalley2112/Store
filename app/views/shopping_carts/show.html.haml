@@ -1,3 +1,4 @@
+-total_price = 0
 -if @can_place_order
 	-display_btn_attr = {}
 -else
@@ -14,13 +15,16 @@
 		%tr
 			%td.alert{:colspan => "4"} There currently aren't any items in your cart. 
 	-@cart_items.each do |item|
+		-total_price += (item.product.retail_price || 0)
 		%tr 
 			%td= item.product.name
 			%td= item.product.description 
-			%td= to_dollars(item.product.retail_price)
+			%td.dollars= to_dollars(item.product.retail_price)
 			%td= item.created_at
 	%tr 
 		%td{:colspan => "4"} &nbsp;
+	%tr 
+		%td{:colspan => "4"}= "Total Price: #{to_dollars(total_price)}"
 	%tr 
 		%td{:colspan => "4", :style => "text-align: center"}= button_to("Place Order", place_order_path(@user), {:method => :get}.merge(display_btn_attr))
 %br/ 

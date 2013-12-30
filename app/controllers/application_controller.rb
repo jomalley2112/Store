@@ -10,8 +10,13 @@ class ApplicationController < ActionController::Base
     else
       #TODO: Exception Handling here...there's a lot that can go wrong i.e. customer but no cart, Invalid or expired token in cookie or session
         cart_token = SecureRandom.uuid
+        #binding.pry
         if customer_token = cookies[:customer_token]
-          customer = Customer.find_by_customer_token(customer_token) #if they are already a customer add new cart for customer
+          if customer = Customer.find_by_customer_token(customer_token) #if they are already a customer add new cart for customer
+          else
+            customer = Customer.create :customer_token => cookies[:customer_token]
+            #Rest of Customer info is left empty (name, address)
+          end
           shopping_cart = customer.create_shopping_cart(:cart_token => cart_token)
         else
           #they are not a customer so just create a cart for them

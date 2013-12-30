@@ -5,7 +5,10 @@
 		%th Description
 		%th Cost
 		%th Retail
-		%th 
+		%th
+	-if @products.length < 1
+		%tr 
+			%td.alert{:colspan => "5"} There aren't any products in the chosen category.
 	-@products.each do |product|
 		%tr 
 			%td= product.name

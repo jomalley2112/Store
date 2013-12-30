@@ -1,7 +1,9 @@
+
 %h3= "Order History for #{@customer.last_name+', '+@customer.first_name}"
 -if @customer.orders.length < 1
 	.alert You have no previous orders. 
 -@customer.orders.each do |order|
+	-total_price = 0
 	%div= "Order ##{order.id} made on #{order.created_at}"
 	%table{:class => "table table-bordered table-striped"}
 		%thead 
@@ -10,8 +12,12 @@
 				%th Description
 				%th Price
 		-order.order_items.each do |order_item|
+			-total_price += order_item.product.retail_price || 0
 			%tr 
 				%td= order_item.product.name
 				%td= order_item.product.description
-				%td= to_dollars(order_item.product.retail_price)
+				%td.dollars= to_dollars(order_item.product.retail_price)
+		%tr 
+			%td{:colspan => "2", :style => "text-align: right"} Total:
+			%td.dollars= to_dollars(total_price)
 	%br/ 	

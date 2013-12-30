@@ -8,14 +8,14 @@
 </head>
 <body>
 	<% path_to_prods = @admin ? admin_products_path : products_path %>
-	<table style="width: 550px; background-color: white">
+	<table style="width: 650px; background-color: white">
 		<tr>
 			<td style="text-align: left;">You are currently acting as a <b><%= get_role(@admin) %></b></td>
 			<td style="text-align: right;"><%= link_to("Click here to switch Roles", switch_roles_path) %></td>
 		</tr>
 	</table>
 
-	<div id="container" style="width: 600px;">
+	<div id="container" style="width: 650px;">
 		<div class="navbar-inner" style="border: none; background-color: #ffffff; background-image: none; box-shadow: none">
 			<div  class="navbar" style="text-align: center;">
 			  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -33,7 +33,7 @@
 					<% if @shopping_cart && !@admin %>
 						<li class="active"><%= link_to("Shopping Cart", shopping_cart_path(@shopping_cart)) %></li>
 					<% end %>
-					<% if @customer && @customer.id #so it can't be an empty, unsaved, new user %>
+					<% if !@admin && @customer && @customer.id #so it can't be an empty, unsaved, new user %>
 						<li class="active"><%= link_to("Order History", customer_orders_path(:customer_id => @customer.id)) %></li>
 					<% end %>
 					<% if @admin %>

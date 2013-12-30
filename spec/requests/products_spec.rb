@@ -3,9 +3,15 @@ require 'spec_helper'
 feature "Products", :js => false do
   
   describe "Customers can browse the products by category" do
-  	it "shows message when there aren't any products", :js => false do
+  	it "shows message on index page when there aren't any products", :js => false do
       visit products_path
       page.should have_content("Currently there aren't any products in stock.")
+    end
+
+    it "displays a message when there aren't any products in a chosen category", :js => false do
+      category = FactoryGirl.create(:product_category)
+      visit list_by_category_path(category)
+      page.should have_content("There aren't any products in the chosen category.")
     end
 
     it "displays the current products" do
@@ -75,12 +81,12 @@ feature "Products", :js => false do
   describe "Storekeepers" do
   	it "allows them to add new products", :js => false do
       #visit new_product_path #this shoud be a link that's only available to Storekeepers
-      FactoryGirl.create(:product_category)
+      category = FactoryGirl.create(:product_category)
       visit admin_products_path
       click_link("Add New")
       fill_in("Name", :with => "Product 1")
       fill_in("Description", :with => "This product is...")
-      select("Category 1", :from => "Category")
+      select(category.name, :from => "Category")
       fill_in("Retail Price", :with => "100")
       fill_in("Wholesale Cost", :with => "90")
       click_button("Save")

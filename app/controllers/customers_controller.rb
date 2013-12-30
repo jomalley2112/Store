@@ -12,7 +12,7 @@ class CustomersController < ApplicationController
       customer_token = SecureRandom.uuid
    	  @customer.customer_token = customer_token
 
-	  if @customer.save
+	  if @customer.filled_in? && @customer.save
 	  	@shopping_cart.customer = @customer
 	  	@shopping_cart.save
 	    cookies[:customer_token] = customer_token
@@ -23,7 +23,8 @@ class CustomersController < ApplicationController
       end
 	    redirect_to redir_to, notice: 'Congratulations your customer profile was successfully created.'
 	  else
-	    render action: "new"
+	    flash[:alert] = "Customer was Not saved. Please make sure all fields are filled in."
+      render action: "new"
 	  end
   end
 

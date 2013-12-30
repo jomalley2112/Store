@@ -3,7 +3,7 @@
 FactoryGirl.define do
   factory :product_category do
 	sequence(:name) {|n| "Category #{n}"}
-  end
+end
 
   factory :product do
     sequence(:name) {|n| "Product #{n}"}
@@ -19,8 +19,11 @@ FactoryGirl.define do
   end
   
   factory :customer do
-    first_name "John"
-    last_name "JacobsLadder"
+    factory :filled_in_customer do
+      first_name "John"
+      last_name "JacobsLadder"
+      customer_token SecureRandom.uuid
+    end
   end
 
 
