@@ -8,24 +8,24 @@ class CustomersController < ApplicationController
   end
 
   def create
-      @customer = Customer.new(params[:customer])
-      customer_token = SecureRandom.uuid
-   	  @customer.customer_token = customer_token
+    @customer = Customer.new(params[:customer])
+    customer_token = SecureRandom.uuid
+    @customer.customer_token = customer_token
 
-	  if @customer.filled_in? && @customer.save
-	  	@shopping_cart.customer = @customer
-	  	@shopping_cart.save
-	    cookies[:customer_token] = customer_token
+    if @customer.filled_in? && @customer.save
+      @shopping_cart.customer = @customer
+      @shopping_cart.save
+      cookies[:customer_token] = customer_token
       if params[:from_order] == "true"
         redir_to = place_order_path #TODO: Make this redirect directly to the order creation???
       else
         redir_to = products_path
       end
-	    redirect_to redir_to, notice: 'Congratulations your customer profile was successfully created.'
-	  else
-	    flash[:alert] = "Customer was Not saved. Please make sure all fields are filled in."
+      redirect_to redir_to, notice: 'Congratulations your customer profile was successfully created.'
+    else
+      flash[:alert] = "Customer was Not saved. Please make sure all fields are filled in."
       render action: "new"
-	  end
+    end
   end
 
 end

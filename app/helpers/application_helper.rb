@@ -1,6 +1,6 @@
 module ApplicationHelper
 
-	#Could monkeypath this to an existing class (FixNum?)
+	#Could monkeypatch this to an existing class (FixNum?)
 	def to_dollars(number=0)
 		number ||= 0
 		if number == 0

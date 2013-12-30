@@ -1,10 +1,5 @@
 class ProductsController < ApplicationController
   def index
-  	# if @q = params[:txt_search]
-  	# 	where_clause = "name like '%#{@q}%' or description like '%#{@q}%'"
-  	# else
-  	# 	where_clause = "1=1"
-  	# end
   	@products = Product.where(where_clause).order(:name).all 
   end
 
@@ -17,16 +12,6 @@ class ProductsController < ApplicationController
     render :index
   end
 
-  #TODO: Move to private
-  def where_clause
-    if @q = params[:txt_search]
-      where_clause = "name like '%#{@q}%' or description like '%#{@q}%'"
-    else
-      where_clause = "1=1"
-    end
-  end
-
-
   def list_by_category
   	if cat_id = params[:id]
   		@cat = ProductCategory.find(cat_id)
@@ -37,8 +22,6 @@ class ProductsController < ApplicationController
   end
  
   def add_to_cart 
-  	#binding.pry
-  	#get cart for current user or create a new one
   	shopping_cart = get_or_create_cart
   	shopping_cart.add_product(Product.find(params[:product_id]))
   	redirect_to shopping_cart
@@ -46,13 +29,11 @@ class ProductsController < ApplicationController
 
   def new
     @product = Product.new
-    #@admin = true
   end
 
   def create
     @product = Product.new(params[:product])
     if @product.save
-      #@admin = true
       redirect_to new_product_path, :notice => "Product Saved!"
     else
       render :new
@@ -61,7 +42,6 @@ class ProductsController < ApplicationController
 
   def edit
     @product = Product.find(params[:id])
-    #@admin = true
   end
 
   def update
@@ -81,5 +61,15 @@ class ProductsController < ApplicationController
     @product.destroy
     redirect_to admin_products_path, :notice => 'Product Deleted!'
   end
+
+  private
+  def where_clause
+    if @q = params[:txt_search]
+      where_clause = "name like '%#{@q}%' or description like '%#{@q}%'"
+    else
+      where_clause = "1=1"
+    end
+  end
+
 
 end
