@@ -48,7 +48,6 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
 
     if @product.update_attributes(params[:product])
-      #@admin = true
       redirect_to edit_product_path(@product), :notice => "Product Updated!"
     else
       render :edit
@@ -57,8 +56,8 @@ class ProductsController < ApplicationController
 
   def destroy
     @product = Product.find(params[:id])
-    #@admin = true
     @product.destroy
+
     redirect_to admin_products_path, :notice => 'Product Deleted!'
   end
 

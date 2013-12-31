@@ -2,7 +2,7 @@ require 'spec_helper'
 
 feature "Products", :js => false do
   
-  describe "Customers can browse the products by category" do
+  describe "Customers can browse the products by category", :js => false do
   	it "shows message on index page when there aren't any products", :js => false do
       visit products_path
       page.should have_content("Currently there aren't any products in stock.")
@@ -130,11 +130,13 @@ feature "Products", :js => false do
       page.should have_content("Product 1b")
       all(:link, "Delete")[1].click
       sleep 1
+      page.should have_content("Product Deleted!")
       page.should have_no_content("Product 1b")
       sleep 1
       page.should have_content("Product 3a")
       all(:link, "Delete")[5].click
       sleep 1
+      page.should have_content("Product Deleted!")
       page.should have_no_content("Product 3a")
   	end
   end
