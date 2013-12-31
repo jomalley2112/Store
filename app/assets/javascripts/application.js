@@ -11,9 +11,12 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery_ujs
-//= require twitter/bootstrap
 //= require_tree .
+
+/*
+require jquery_ujs
+require twitter/bootstrap
+*/
 
 function clear_search(btn) {
 	search_field = $(btn).closest("div[class='search-form']").find("#txt_search");
