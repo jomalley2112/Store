@@ -1,9 +1,0 @@
-Go to http://railswizard.org/ and copy command like rails new Store -m http://railswizard.org/cbb1bd4b6b18c38d52a9.rb -J -T and run it in the comsole (make sure you're in the right directory...rails will create the top-level directory named for the project).
-
-cd into new directory.
-check out Gemfile and make sure it has all needed gems (don't forget to add 'pry' at the top level).
-run $ bundle install.
-run any installers needed for gems to operate (rails g rspec:install).
-create 3 new databases (project_dev, project_test, project_prod)  and add those names to config/database.yml.
-setup config/application.rb to your liking.
-In order to use capybara from within rspec add these 3 lines to spec_helper.rb [require 'capybara/rails', require 'capybara/rspec', include Capybara::DSL].

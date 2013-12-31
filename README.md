@@ -1,7 +1,6 @@
 
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
 
-==This app was created as an exercise. The following requirements where given:
+ This app was created as an exercise. The following requirements where given:
 	E-Commerce Store
 		 *  Our online store contains multiple products where many customers can shop concurrently.  Storekeepers have unlimited supply of products.
 		 *  Products have a name, description, category, wholesale cost, and retail price
@@ -19,7 +18,7 @@ Run "rake doc:app" to generate API documentation for your models, controllers, h
 
 
 
-==To check out the different functions of the app:
+ To check out the different functions of the app:
 	STOREKEEPER adding products:
 		1. Go to the root ("/")
 		2. Make sure in the top left it says "You are currently acting as a Storekeeper". If it says your acting as Customer instead just click on the "Click here to switch Roles" link.
@@ -27,13 +26,10 @@ Run "rake doc:app" to generate API documentation for your models, controllers, h
 		4. Click on "New Product Category"
 		5. Make up a category name and click save
 		6. Repeat a few times so you have a few categories
-
 		7. Click on the "Products" nav item
 		8. Click on the "Add New" link
-		
 		9. Enter some information select a category and click the "Save" button
 		10. Repeat a few times selecting different categories
-
 		11. Storekeeper can also Edit and Delete Products and Categories
 
 
