@@ -1,5 +1,4 @@
 
-
  This app was created as an exercise. The following requirements where given:
 	E-Commerce Store
 		 *  Our online store contains multiple products where many customers can shop concurrently.  Storekeepers have unlimited supply of products.
@@ -16,9 +15,7 @@
 		 *  Customers checkout
 		 *  Customers can view their order history
 
-
-
- To check out the different functions of the app:
+	To check out the different functions of the app:
 	STOREKEEPER adding products:
 		1. Go to the root ("/")
 		2. Make sure in the top left it says "You are currently acting as a Storekeeper". If it says your acting as Customer instead just click on the "Click here to switch Roles" link.
@@ -31,7 +28,6 @@
 		9. Enter some information select a category and click the "Save" button
 		10. Repeat a few times selecting different categories
 		11. Storekeeper can also Edit and Delete Products and Categories
-
 
 	CUSTOMER buying products:
 		1. Go to the root ("/")
