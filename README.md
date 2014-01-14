@@ -1,19 +1,19 @@
 
  This app was created as an exercise. The following requirements where given:
 	E-Commerce Store
-	 * Our online store contains multiple products where many customers can shop concurrently.  Storekeepers have unlimited supply of products.
-	 * Products have a name, description, category, wholesale cost, and retail price
-	 * Storekeepers can add products
-	 * Storekeepers can update product information
-	 * Storekeepers can remove products that have not been previously sold
-	 * Storekeepers can view a list of customer orders
-	 * Storekeepers can view the details of one order
-	 * Customers can browse the products by category
-	 * Customers can search for products
-	 * Customers fill a shopping cart
-	 * Customers empty a shopping cart
-	 * Customers checkout
-	 * Customers can view their order history
+ * Our online store contains multiple products where many customers can shop concurrently.  Storekeepers have unlimited supply of products.
+ * Products have a name, description, category, wholesale cost, and retail price
+ * Storekeepers can add products
+ * Storekeepers can update product information
+ * Storekeepers can remove products that have not been previously sold
+ * Storekeepers can view a list of customer orders
+ * Storekeepers can view the details of one order
+ * Customers can browse the products by category
+ * Customers can search for products
+ * Customers fill a shopping cart
+ * Customers empty a shopping cart
+ * Customers checkout
+ * Customers can view their order history
 
 	To check out the different functions of the app:
 	STOREKEEPER adding products:
